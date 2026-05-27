@@ -3,187 +3,481 @@ import type { Project } from '../types/project';
 export const PROJECTS_DATA: Project[] = [
   {
     id: '1',
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with advanced features and modern UI',
-    longDescription: 'A complete e-commerce platform built with modern technologies featuring user authentication, payment processing, admin dashboard, and real-time inventory management. The platform supports multiple payment gateways and provides a seamless shopping experience.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redis', 'Docker', 'TypeScript'],
+    title: 'DSA Visualizer',
+    description:
+      'Interactive platform for visualizing Data Structures and Algorithms with real-time animations.',
+
+    longDescription:
+      'DSA Visualizer is an educational platform that helps students and developers understand algorithms through interactive visual execution. The application supports sorting visualizations, data structure animations, speed controls, and step-by-step execution.',
+
+    technologies: [
+      'React',
+      'Vite',
+      'CSS',
+      'Redux',
+      'D3.js'
+    ],
+
     images: [
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500',
-      'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=500',
-      'https://images.unsplash.com/photo-1563013546-7e5c0538f0b5?w=500'
+      '/projects/dsa-1.png',
+      '/projects/dsa-2.png'
     ],
-    liveUrl: 'https://ecommerce-demo.com',
-    githubUrl: 'https://github.com/username/ecommerce',
+
+    liveUrl:
+      'https://dsa-visualization-two.vercel.app/',
+
+    githubUrl:
+      'https://github.com/StudentTahseenraza/DSA-Visualization',
+
     featured: true,
-    category: 'fullstack',
+
+    category: 'frontend',
+
     status: 'completed',
+
     features: [
-      'User authentication & authorization with JWT',
-      'Payment processing with Stripe integration',
-      'Real-time inventory management system',
-      'Admin dashboard with sales analytics',
-      'Advanced product search and filtering',
-      'Order tracking and management system',
-      'Responsive design for all devices'
+      'Sorting visualization',
+      'Tree visualization',
+      'Linked List animations',
+      'Stack and Queue simulation',
+      'Animation speed control',
+      'Step-by-step execution',
+      'Interactive UI'
     ],
+
     challenges: [
-      'Handling concurrent orders and inventory updates in real-time',
-      'Implementing secure payment processing with multiple gateways',
-      'Optimizing database queries for large product catalogs',
-      'Managing user sessions and cart persistence'
+      'Synchronizing animations with algorithm execution',
+      'Maintaining performance during visualization',
+      'Reusable component architecture'
     ],
+
     solutions: [
-      'Used Redis for caching and real-time inventory updates',
-      'Implemented idempotent payment API endpoints with retry logic',
-      'Created optimized MongoDB indexes and aggregation pipelines',
-      'Utilized React Context for state management across the application'
+      'Built modular visualization engine',
+      'Used controlled rendering updates',
+      'Separated visualization and execution logic'
     ]
   },
+
   {
     id: '2',
-    title: 'Task Management App',
-    description: 'Collaborative task management with real-time updates and drag-drop interface',
-    longDescription: 'A real-time collaborative task management application with drag-and-drop functionality, team collaboration features, and progress tracking. Built with modern web technologies for optimal performance.',
-    technologies: ['React', 'Socket.io', 'Express', 'PostgreSQL', 'Tailwind CSS', 'Framer Motion'],
+
+    title: 'AI Spend Audit',
+
+    description:
+      'AI-powered SaaS platform to analyze and optimize AI subscription spending.',
+
+    longDescription:
+      'AI Spend Audit identifies unnecessary AI tool spending and recommends optimization opportunities using benchmark analysis, forecasting, audit scoring, and intelligent summaries.',
+
+    technologies: [
+      'React',
+      'Node.js',
+      'MongoDB',
+      'OpenAI',
+      'Vercel'
+    ],
+
     images: [
-      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500',
-      'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=500'
+      '/projects/spend-1.png',
+      '/projects/spend-2.png'
     ],
-    liveUrl: 'https://taskapp-demo.com',
-    githubUrl: 'https://github.com/username/taskapp',
+
+    liveUrl:
+      'https://credex-ai-spend-audit-five.vercel.app/',
+
+    githubUrl:
+      'https://github.com/StudentTahseenraza/credex-ai-spend-audit',
+
     featured: true,
+
     category: 'fullstack',
+
     status: 'completed',
+
     features: [
-      'Real-time collaboration with WebSockets',
-      'Drag and drop interface for task management',
-      'Team management and user roles',
-      'Progress analytics and reporting',
-      'File attachments and comments',
-      'Due date reminders and notifications',
-      'Mobile-responsive design'
+      'AI Spend Health Score',
+      'Benchmark Intelligence',
+      'Optimization Engine',
+      'Forecast Dashboard',
+      'PDF Reports',
+      'Email Reports',
+      'Shareable Audit Links'
     ],
+
     challenges: [
-      'Real-time synchronization across multiple clients',
-      'Handling concurrent drag-and-drop operations',
-      'Maintaining data consistency across distributed systems',
-      'Optimizing real-time updates for large teams'
+      'Building deterministic audit logic',
+      'Generating meaningful recommendations',
+      'Creating premium SaaS experience'
     ],
+
     solutions: [
-      'Implemented operational transformation for conflict resolution',
-      'Used WebSocket rooms for team-based real-time updates',
-      'Applied optimistic UI updates with rollback capability',
-      'Implemented debouncing for frequent updates'
+      'Rule-based audit engine',
+      'AI summarization',
+      'Progressive loading experience'
     ]
   },
+
   {
     id: '3',
-    title: 'Weather Dashboard',
-    description: 'Real-time weather application with beautiful data visualizations',
-    longDescription: 'A modern weather dashboard that provides real-time weather data, forecasts, and beautiful data visualizations. Features include location-based weather, historical data, and interactive charts.',
-    technologies: ['Vue.js', 'Chart.js', 'Weather API', 'Vuex', 'SASS'],
+
+    title: 'AI Counsellor',
+
+    description:
+      'AI-powered study abroad planning and recommendation platform.',
+
+    longDescription:
+      'Structured AI decision platform guiding students from onboarding to university selection and application preparation.',
+
+    technologies: [
+      'React',
+      'Node.js',
+      'MongoDB',
+      'AI APIs'
+    ],
+
     images: [
-      'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500',
-      'https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?w=500'
+      '/projects/counsellor-1.png',
+      '/projects/counsellor-2.png'
     ],
-    liveUrl: 'https://weather-demo.com',
-    githubUrl: 'https://github.com/username/weather-app',
-    featured: false,
-    category: 'frontend',
+
+    liveUrl:
+      'https://study-navigator-ai.vercel.app/',
+
+    githubUrl:
+      'https://github.com/StudentTahseenraza/study-navigator-ai',
+
+    featured: true,
+
+    category: 'fullstack',
+
     status: 'completed',
+
     features: [
-      'Real-time weather data from multiple sources',
-      'Interactive charts and data visualizations',
-      'Location-based weather forecasts',
-      'Historical weather data analysis',
-      'Responsive design for all screen sizes',
-      'Offline functionality with service workers'
+      'AI Counsellor',
+      'University Discovery',
+      'Dashboard',
+      'Application Guidance',
+      'Task Generation',
+      'Progress Tracking'
     ],
+
     challenges: [
-      'Handling multiple API data sources and rate limiting',
-      'Creating responsive and accessible data visualizations',
-      'Managing state for complex weather data structures',
-      'Implementing offline functionality with caching'
+      'Structured recommendation workflow',
+      'Decision locking mechanism',
+      'Profile-driven recommendations'
     ],
+
     solutions: [
-      'Implemented API aggregation layer with caching',
-      'Used Chart.js with accessibility enhancements',
-      'Vuex for centralized state management',
-      'Service workers for offline functionality and caching'
+      'Stage-based architecture',
+      'AI recommendation pipeline',
+      'Dynamic recalculation system'
     ]
   },
+
   {
     id: '4',
-    title: 'REST API Service',
-    description: 'Scalable backend API with authentication and documentation',
-    longDescription: 'A robust REST API service built with Node.js and Express, featuring comprehensive authentication, rate limiting, API documentation, and database integration.',
-    technologies: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Swagger', 'Docker'],
+
+    title: 'Team Task Manager',
+
+    description:
+      'AI-powered collaborative task and project management platform.',
+
+    longDescription:
+      'Realtime collaboration platform with project management, analytics, AI automation, and Socket.io communication.',
+
+    technologies: [
+      'React',
+      'Node.js',
+      'MongoDB',
+      'Socket.io',
+      'OpenRouter'
+    ],
+
     images: [
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500',
-      'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500'
+      '/projects/task-1.png',
+      '/projects/task-2.png'
     ],
-    liveUrl: 'https://api-demo.com',
-    githubUrl: 'https://github.com/username/api-service',
-    featured: false,
-    category: 'backend',
+
+    liveUrl:
+      'https://team-task-manager-two-cyan.vercel.app/',
+
+    githubUrl:
+      'https://github.com/StudentTahseenraza/Team_Task_Manager',
+
+    featured: true,
+
+    category: 'fullstack',
+
     status: 'completed',
+
     features: [
-      'RESTful API design with proper HTTP status codes',
-      'JWT authentication and authorization',
-      'Rate limiting and request throttling',
-      'Comprehensive API documentation with Swagger',
-      'Database integration with MongoDB',
-      'Docker containerization',
-      'Error handling and logging'
+      'JWT Authentication',
+      'Role-Based Access',
+      'Realtime Collaboration',
+      'Drag Drop Board',
+      'AI Task Generation',
+      'Dashboard Analytics'
     ],
+
     challenges: [
-      'Implementing secure authentication system',
-      'Handling rate limiting across distributed systems',
-      'Creating comprehensive API documentation',
-      'Database performance optimization'
+      'Realtime synchronization',
+      'Role security',
+      'Performance optimization'
     ],
+
     solutions: [
-      'Used JWT with refresh token rotation for security',
-      'Implemented Redis for distributed rate limiting',
-      'Auto-generated Swagger documentation from code',
-      'Database indexing and query optimization'
+      'Socket.io rooms',
+      'JWT authorization',
+      'Optimized rendering'
+    ]
+  },
+
+  {
+    id: '5',
+
+    title:
+      'Finance Dashboard Backend API',
+
+    description:
+      'Production-ready financial backend with RBAC and analytics.',
+
+    longDescription:
+      'Backend API for secure financial record management with authentication, analytics, role permissions, and enterprise-grade architecture.',
+
+    technologies: [
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'Redis',
+      'JWT',
+      'Swagger',
+      'Render'
+    ],
+
+    images: [
+      '/projects/finance-1.png'
+    ],
+
+    liveUrl:
+      'https://finance-data-processing-and-access-5h1o.onrender.com/',
+
+    githubUrl:
+      'https://github.com/StudentTahseenraza/-Finance-Data-Processing-and-Access-Control-Backend',
+
+    featured: false,
+
+    category: 'backend',
+
+    status: 'completed',
+
+    features: [
+      'JWT Authentication',
+      'RBAC',
+      'Swagger Docs',
+      'Rate Limiting',
+      'Analytics',
+      'Audit Logging',
+      'Refresh Tokens'
+    ],
+
+    challenges: [
+      'Secure financial processing',
+      'Role permission management',
+      'Scalable architecture'
+    ],
+
+    solutions: [
+      'Connection pooling',
+      'Redis caching',
+      'Security middleware'
     ]
   },
   {
-    id: '5',
-    title: 'Mobile Fitness App',
-    description: 'Cross-platform fitness tracking application with social features',
-    longDescription: 'A React Native fitness application that tracks workouts, nutrition, and progress. Includes social features, workout plans, and integration with health platforms.',
-    technologies: ['React Native', 'Firebase', 'Redux', 'Health APIs', 'Expo'],
-    images: [
-      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500',
-      'https://images.unsplash.com/photo-1571019614244-c5c476de52e4?w=500'
-    ],
-    liveUrl: 'https://fitness-app.com',
-    githubUrl: 'https://github.com/username/fitness-app',
-    featured: false,
-    category: 'mobile',
-    status: 'in-progress',
-    features: [
-      'Workout tracking and planning',
-      'Nutrition and calorie tracking',
-      'Social features and challenges',
-      'Integration with health platforms',
-      'Progress analytics and charts',
-      'Push notifications and reminders',
-      'Cross-platform compatibility'
-    ],
-    challenges: [
-      'Cross-platform compatibility and performance',
-      'Real-time data synchronization',
-      'Integration with multiple health APIs',
-      'Offline functionality for workout tracking'
-    ],
-    solutions: [
-      'Used React Native with platform-specific optimizations',
-      'Firebase for real-time data synchronization',
-      'Abstracted health API integrations',
-      'Local storage with sync capabilities'
-    ]
-  }
+  id: '6',
+
+  title: 'TaskFlow – Task Management System',
+
+  description:
+    'Modern task management dashboard with authentication, analytics, and role-based access.',
+
+  longDescription:
+    'TaskFlow is a productivity platform built to manage tasks efficiently through role-based access, analytics, responsive UI, dark mode support, and optimized performance.',
+
+  technologies: [
+    'React',
+    'Vite',
+    'Tailwind CSS',
+    'React Query',
+    'React Router',
+    'Recharts',
+    'Framer Motion'
+  ],
+
+  images: [
+    '/projects/taskflow-1.png',
+    '/projects/taskflow-2.png'
+  ],
+
+  liveUrl:
+    'https://task-manager-si-iota.vercel.app/',
+
+  githubUrl:
+    'https://github.com/StudentTahseenraza/Task-Manager-SI',
+
+  featured: true,
+
+  category: 'frontend',
+
+  status: 'completed',
+
+  features: [
+    'JWT Authentication',
+    'Task CRUD',
+    'Search Filters Sorting',
+    'Analytics Dashboard',
+    'Role-Based Access',
+    'Dark Mode',
+    'Toast Notifications',
+    'React Query Optimization'
+  ],
+
+  challenges: [
+    'Managing permissions across roles',
+    'Building responsive dashboards',
+    'Optimizing API interactions'
+  ],
+
+  solutions: [
+    'Role-based architecture',
+    'React Query caching',
+    'Reusable dashboard components'
+  ]
+},
+
+{
+  id: '7',
+
+  title: 'CipherSQLStudio',
+
+  description:
+    'Interactive SQL learning platform with AI-powered hints and real-time execution.',
+
+  longDescription:
+    'CipherSQLStudio provides hands-on SQL learning with Monaco Editor, PostgreSQL execution, AI hint generation, authentication, progress tracking, and analytics.',
+
+  technologies: [
+    'React',
+    'Vite',
+    'Monaco Editor',
+    'Node.js',
+    'Express',
+    'PostgreSQL',
+    'MongoDB',
+    'Gemini',
+    'OpenRouter'
+  ],
+
+  images: [
+    '/projects/sql-1.png',
+    '/projects/sql-2.png'
+  ],
+
+  liveUrl:
+    'https://cipher-schools-aasignment.vercel.app/',
+
+  githubUrl:
+    'https://github.com/StudentTahseenraza/CipherSchools-aasignment',
+
+  featured: true,
+
+  category: 'fullstack',
+
+  status: 'completed',
+
+  features: [
+    'Interactive SQL Editor',
+    'AI Hint Generation',
+    'Real-time SQL Execution',
+    'Assignment System',
+    'Progress Tracking',
+    'Admin Dashboard',
+    'Authentication',
+    'Analytics'
+  ],
+
+  challenges: [
+    'Secure SQL execution',
+    'AI-assisted learning flow',
+    'Responsive editor experience'
+  ],
+
+  solutions: [
+    'PostgreSQL sandbox',
+    'LLM integrations',
+    'Progressive learning system'
+  ]
+},
+
+{
+  id: '8',
+
+  title: 'Employee Dashboard',
+
+  description:
+    'Advanced employee analytics dashboard with visualizations and productivity tools.',
+
+  longDescription:
+    'Modern React dashboard featuring employee analytics, charts, camera integration, voice controls, exports, maps, QR generation, and responsive UI.',
+
+  technologies: [
+    'React',
+    'Vite',
+    'Tailwind CSS',
+    'Recharts',
+    'React Router',
+    'Framer Motion',
+    'jsPDF',
+    'XLSX'
+  ],
+
+  images: [
+    '/projects/employee-1.png',
+    '/projects/employee-2.png'
+  ],
+
+  liveUrl:
+    'https://employee-dashboard-xi-eight.vercel.app/',
+
+  githubUrl:
+    '',
+
+  featured: false,
+
+  category: 'frontend',
+
+  status: 'completed',
+
+  features: [
+    'Authentication',
+    'Charts & Analytics',
+    'Camera Integration',
+    'Voice Commands',
+    'Keyboard Shortcuts',
+    'Export CSV Excel PDF',
+    'QR Code Generation',
+    'Weather Integration'
+  ],
+
+  challenges: [
+    'Complex dashboard state',
+    'Responsive data visualization',
+    'Browser API integration'
+  ],
+
+  solutions: [
+    'Modular architecture',
+    'Performance optimization',
+    'Reusable visualization layer'
+  ]
+}
 ];

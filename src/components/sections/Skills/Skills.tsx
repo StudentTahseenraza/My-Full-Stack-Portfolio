@@ -15,27 +15,29 @@ const Skills: React.FC = () => {
   const skills = {
     frontend: [
       { name: 'React', level: 95 },
-      { name: 'TypeScript', level: 90 },
-      { name: 'JavaScript', level: 95 },
+      { name: 'TypeScript', level: 88 },
+      { name: 'JavaScript', level: 90 },
       { name: 'HTML/CSS', level: 98 },
       { name: 'Tailwind CSS', level: 92 },
-      { name: 'Vue.js', level: 85 },
+      { name: 'Next.js', level: 80 },
     ],
     backend: [
       { name: 'Node.js', level: 90 },
       { name: 'Python', level: 88 },
       { name: 'Express.js', level: 87 },
+      { name: 'Java', level: 89 },
       { name: 'MongoDB', level: 85 },
       { name: 'PostgreSQL', level: 82 },
-      { name: 'Redis', level: 80 },
+      { name: 'MySQL', level: 80 },
     ],
     tools: [
       { name: 'Git', level: 95 },
       { name: 'Docker', level: 85 },
-      { name: 'AWS', level: 80 },
-      { name: 'Figma', level: 88 },
-      { name: 'Webpack', level: 83 },
-      { name: 'Jest', level: 85 },
+      { name: 'Render', level: 80 },
+      { name: 'Figma', level: 60 },
+      { name: 'VSCODE', level: 83 },
+      { name: 'Jest', level: 70 },
+      { name: 'Vercel', level: 80 },
     ],
     soft: [
       { name: 'Problem Solving', level: 95 },
@@ -80,11 +82,10 @@ const Skills: React.FC = () => {
           {categories.map((category) => (
             <motion.button
               key={category.id}
-              className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 ${
-                activeCategory === category.id
+              className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 ${activeCategory === category.id
                   ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/25'
                   : 'bg-white/10 text-gray-300 hover:text-white hover:bg-white/20'
-              }`}
+                }`}
               onClick={() => setActiveCategory(category.id)}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
@@ -166,10 +167,10 @@ const Skills: React.FC = () => {
               <h3 className="text-2xl font-bold text-white mb-6">Expertise Areas</h3>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { name: 'Web Development', level: 'Expert' },
-                  { name: 'UI/UX Design', level: 'Advanced' },
-                  { name: 'DevOps', level: 'Intermediate' },
-                  { name: 'Mobile Development', level: 'Intermediate' },
+                  { name: 'Full Stack Web Development', level: 'Advanced' },
+                  { name: 'Frontend Development (React / Next.js)', level: 'Expert' },
+                  { name: 'Backend Development (Node.js / APIs)', level: 'Intermediate' },
+                  { name: 'AI Integration in Web Apps', level: 'Intermediate' },
                 ].map((area, index) => (
                   <motion.div
                     key={area.name}
@@ -181,13 +182,12 @@ const Skills: React.FC = () => {
                     viewport={{ once: true }}
                   >
                     <h4 className="text-white font-semibold mb-2">{area.name}</h4>
-                    <span className={`text-sm font-medium px-3 py-1 rounded-full ${
-                      area.level === 'Expert' 
+                    <span className={`text-sm font-medium px-3 py-1 rounded-full ${area.level === 'Expert'
                         ? 'bg-green-500/20 text-green-400'
                         : area.level === 'Advanced'
-                        ? 'bg-blue-500/20 text-blue-400'
-                        : 'bg-yellow-500/20 text-yellow-400'
-                    }`}>
+                          ? 'bg-blue-500/20 text-blue-400'
+                          : 'bg-yellow-500/20 text-yellow-400'
+                      }`}>
                       {area.level}
                     </span>
                   </motion.div>

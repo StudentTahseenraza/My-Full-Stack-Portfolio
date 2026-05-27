@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { MagneticButton } from '../../ui/MagneticButton';
 import { AnimatedCard } from '../../ui/AnimatedCard';
 
@@ -36,27 +36,26 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@example.com',
-      href: 'mailto:hello@example.com',
+      value: 'toushifraza2015@gmail.com',
+      href: 'mailto:toushifraza2015@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+19 7646074286',
+      href: 'tel:+197646074286',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Hyderabad, Telangana, India',
       href: '#',
     },
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/StudentTahseenraza', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/tahseen-raza7646', label: 'LinkedIn' },
   ];
 
   return (
